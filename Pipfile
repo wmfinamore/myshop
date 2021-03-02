@@ -10,6 +10,7 @@ django = "==3.1.6"
 python-decouple = "*"
 pillow = "*"
 celery = "==4.*"
+braintree = "==3.*"
 
 [requires]
 python_version = "3.8"
