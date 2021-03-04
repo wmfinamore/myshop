@@ -17,7 +17,7 @@ def payment_process(request):
         nonce = request.POST.get('payment_method_nonce', None)
         # create and submit transaction
         result = gateway.transaction.sale({
-            'amount': f'{total_cost:.2f},',
+            'amount': f'{total_cost:.2f}',
             'payment_method_nonce': nonce,
             'options': {
                 'submit_for_settlement': True
@@ -28,9 +28,14 @@ def payment_process(request):
             order.paid = True
             # store the unique transaction id
             order.braintree_id = result.transaction.id
+            order.braintree_response_code = result.transaction.processor_response_code
+            order.braintree_response_text = result.transaction.processor_response_text
             order.save()
             return redirect('payment:done')
         else:
+            order.braintree_response_code = result.transaction.processor_response_code
+            order.braintree_response_text = result.transaction.processor_response_text
+            order.save()
             return redirect('payment:canceled')
     else:
         # generate token

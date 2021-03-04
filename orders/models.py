@@ -13,6 +13,8 @@ class Order(models.Model):
     updated = models.DateTimeField(auto_now=True)
     paid = models.BooleanField(default=False)
     braintree_id = models.CharField(max_length=150, blank=True)
+    braintree_response_code = models.CharField(max_length=50, blank=True)
+    braintree_response_text = models.TextField(blank=True)
 
     class Meta:
         ordering = ('-created',)
