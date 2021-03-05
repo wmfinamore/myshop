@@ -19,7 +19,7 @@ def export_to_csv(modeladmin, request, queryset):
     response['Content-Disposition'] = content_disposition
     writer = csv.writer(response)
     fields = [field for field in opts.get_fields() if not \
-              field.many_to_many and not field.one_to_many]
+        field.many_to_many and not field.one_to_many]
     # Write a first row with header information
     writer.writerow([field.verbose_name for field in fields])
     # write data rows
@@ -42,11 +42,23 @@ def order_detail(obj):
     return mark_safe(f'<a href="{url}">View</a>')
 
 
+def order_pdf(obj):
+    url = reverse('orders:admin_order_pdf', args=[obj.id])
+    return mark_safe(f'<a href="{url}">PDF</a>')
+
+
+order_pdf.short_description = 'Invoice'
+
+
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
     list_display = ['id', 'first_name', 'last_name', 'email',
                     'address', 'postal_code', 'city', 'paid',
-                    'created', 'updated', order_detail]
+                    'created', 'updated', order_detail,
+                    order_pdf]
     list_filter = ['paid', 'created', 'updated']
     inlines = [OrderItemInLine]
     actions = [export_to_csv]
+
+
+

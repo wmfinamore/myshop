@@ -11,6 +11,7 @@ python-decouple = "*"
 pillow = "*"
 celery = "==4.*"
 braintree = "==3.*"
+weasyprint = "==51"
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
