@@ -18,22 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\cart\forms.py:11
-msgid "Quantity"
+#: .\shop\templates\shop\base.html:7 .\shop\templates\shop\base.html:14
+msgid "My Shop"
 msgstr ""
 
-#: .\coupons\forms.py:6
-msgid "Coupon"
+#: .\shop\templates\shop\base.html:20
+msgid "Your cart"
 msgstr ""
 
-#: .\myshop\settings.py:119
-msgid "English"
+#: .\shop\templates\shop\base.html:22
+#, python-format
+msgid ""
+"\n"
+"                                %(items)s item, $%(total)s,\n"
+"                            "
+msgid_plural ""
+"\n"
+"                                %(items)s items, $%(total)s\n"
+"                            "
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\shop\templates\shop\base.html:29
+msgid "Your cart is empty"
 msgstr ""
 
-#: .\myshop\settings.py:120
-msgid "Spanish"
-msgstr ""
-
-#: .\myshop\settings.py:121
-msgid "Portuguese"
+#: .\shop\templates\shop\product\detail.html:26
+msgid "Add to cart"
 msgstr ""
