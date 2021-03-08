@@ -20,7 +20,7 @@ class Order(models.Model):
     braintree_id = models.CharField(max_length=150, blank=True)
     braintree_response_code = models.CharField(max_length=50, blank=True)
     braintree_response_text = models.TextField(blank=True)
-    coupon = models.ForeignKey(_('coupon'), Coupon, related_name='orders',
+    coupon = models.ForeignKey(Coupon, related_name='orders',
                                null=True,
                                blank=True,
                                on_delete=models.SET_NULL)
@@ -40,8 +40,8 @@ class Order(models.Model):
 
 
 class OrderITem(models.Model):
-    order = models.ForeignKey(_('order'), Order, related_name='items', on_delete=models.CASCADE)
-    product = models.ForeignKey(_('product'), Product, related_name='order_items', on_delete=models.CASCADE, default=1)
+    order = models.ForeignKey(Order, related_name='items', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name='order_items', on_delete=models.CASCADE, default=1)
     price = models.DecimalField(_('price'), max_digits=10, decimal_places=2)
     quantity = models.PositiveIntegerField(_('quantity'), default=1)
 

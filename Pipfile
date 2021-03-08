@@ -12,6 +12,7 @@ pillow = "*"
 celery = "==4.*"
 braintree = "==3.*"
 weasyprint = "==51"
+django-rosetta = "==0.9.*"
 
 [requires]
 python_version = "3.9"

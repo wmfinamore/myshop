@@ -9,30 +9,31 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 15:53-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2021-03-08 16:20-0306\n"
+"Last-Translator: b'  <wmfinamore@hotmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.9.5\n"
 
 #: .\cart\forms.py:11
 msgid "Quantity"
-msgstr ""
+msgstr "Quantidade"
 
 #: .\coupons\forms.py:6
 msgid "Coupon"
-msgstr ""
+msgstr "Cupóm"
 
 #: .\myshop\settings.py:119
 msgid "English"
-msgstr ""
+msgstr "Inglês"
 
 #: .\myshop\settings.py:120
 msgid "Spanish"
-msgstr ""
+msgstr "Espanhol"
 
 #: .\myshop\settings.py:121
 msgid "Portuguese"
-msgstr ""
+msgstr "Português"
