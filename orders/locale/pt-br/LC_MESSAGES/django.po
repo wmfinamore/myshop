@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-08 15:53-0300\n"
+"POT-Creation-Date: 2021-03-09 10:53-0300\n"
 "PO-Revision-Date: 2021-03-09 10:19-0306\n"
 "Last-Translator: b'  <wmfinamore@hotmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,21 +54,9 @@ msgstr "atualizado em"
 msgid "paid"
 msgstr "pago"
 
-#: .\orders\models.py:23
-msgid "coupon"
-msgstr "cupóm"
-
 #: .\orders\models.py:27
 msgid "discount"
 msgstr "desconto"
-
-#: .\orders\models.py:43
-msgid "order"
-msgstr "pedido"
-
-#: .\orders\models.py:44
-msgid "product"
-msgstr "produto"
 
 #: .\orders\models.py:45
 msgid "price"
@@ -104,3 +92,12 @@ msgstr "Total"
 #: .\orders\templates\orders\order\create.html:29
 msgid "Place order"
 msgstr "Fazer pedido"
+
+#~ msgid "coupon"
+#~ msgstr "cupóm"
+
+#~ msgid "order"
+#~ msgstr "pedido"
+
+#~ msgid "product"
+#~ msgstr "produto"
