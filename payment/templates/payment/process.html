@@ -1,15 +1,18 @@
-{% extends "shop/base.html" %} {% block title %}Pay credit card{% endblock %} {% block content %}
-<h1>Pay by credit card</h1>
+{% extends "shop/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Pay credit card" %}{% endblock %}
+{% block content %}
+<h1>{% trans "Pay by credit card" %}</h1>
 <form id="payment" method="post">
     {% csrf_token %}
-    <label for="card-number">Card Number</label>
+    <label for="card-number">{% trans "Card Number" %}</label>
     <div id="card-number" class="field"></div>
     <label for="cvv">CVV</label>
     <div id="cvv" class="field"></div>
-    <label for="expiration-date">Expiration Date</label>
+    <label for="expiration-date">{% trans "Expiration Date" %}</label>
     <div id="expiration-date" class="field"></div>
     <input type="hidden" id="nonce" name="payment_method_nonce" value="">
-    <input type="submit" value="Pay">
+    <input type="submit" value="{% trans 'Pay' %}">
 </form>
 <!--include the Braintree JS client JDK-->
 <script src="https://js.braintreegateway.com/web/3.59.0/js/client.min.js"></script>
