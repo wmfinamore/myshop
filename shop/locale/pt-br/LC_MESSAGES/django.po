@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 10:53-0300\n"
-"PO-Revision-Date: 2021-03-09 10:19-0306\n"
+"POT-Creation-Date: 2021-03-11 23:44-0300\n"
+"PO-Revision-Date: 2021-03-11 23:24-0306\n"
 "Last-Translator: b'  <wmfinamore@hotmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -22,6 +22,10 @@ msgstr ""
 #: .\shop\templates\shop\base.html:7 .\shop\templates\shop\base.html:14
 msgid "My Shop"
 msgstr "Minha compra"
+
+#: .\shop\templates\shop\base.html:19
+msgid "Language"
+msgstr "Português"
 
 #: .\shop\templates\shop\base.html:35
 msgid "Your cart"
@@ -51,3 +55,15 @@ msgstr "Seu carrinho está vazio"
 #: .\shop\templates\shop\product\detail.html:26
 msgid "Add to cart"
 msgstr "Adicionar ao carrinho"
+
+#: .\shop\templates\shop\product\list.html:9
+msgid "Categories"
+msgstr "Categorias"
+
+#: .\shop\templates\shop\product\list.html:12
+msgid "All"
+msgstr "Todas"
+
+#: .\shop\templates\shop\product\list.html:24
+msgid "Products"
+msgstr "Produtos"
