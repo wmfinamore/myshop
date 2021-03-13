@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "fe98d378393612fc2f264f5bd0aa143c22eee498f91ca223242a1cf0be83d48d"
+            "sha256": "29b44482b3fb9be1a2058427ca5f515b99d1eef44cd4704f5d533400dfb17b70"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -150,6 +150,13 @@
             ],
             "index": "pypi",
             "version": "==3.1.6"
+        },
+        "django-parler": {
+            "hashes": [
+                "sha256:51c33e7c0d3ca139d1f40ca4253894121a25d9df18076b8fafa573ab0d440010"
+            ],
+            "index": "pypi",
+            "version": "==2.2"
         },
         "django-rosetta": {
             "hashes": [

@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'coupons',
 
     'rosetta',
+    'parler',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +134,18 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'es'},
+        {'code': 'pt-br'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
