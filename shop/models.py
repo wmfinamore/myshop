@@ -2,13 +2,14 @@ from django.db import models
 from django.urls import reverse
 from parler.models import (TranslatableModel,
                            TranslatedFields)
+from django.utils.translation import gettext_lazy as _
 
 
 class Category(TranslatableModel):
     translations = TranslatedFields(
-        name=models.CharField(max_length=200,
+        name=models.CharField(_("Name"), max_length=200,
                               db_index=True),
-        slug=models.SlugField(max_length=200,
+        slug=models.SlugField(_("Slug"), max_length=200,
                               unique=True)
     )
 
@@ -27,11 +28,11 @@ class Category(TranslatableModel):
 
 class Product(TranslatableModel):
     translations = TranslatedFields(
-        name=models.CharField(max_length=200,
+        name=models.CharField(_("Name"), max_length=200,
                               db_index=True),
-        slug=models.SlugField(max_length=200,
+        slug=models.SlugField(_("Slug"), max_length=200,
                               db_index=True),
-        description=models.TextField(blank=True)
+        description=models.TextField(_("Description"), blank=True)
     )
     category = models.ForeignKey(Category, related_name='products',
                                  on_delete=models.CASCADE)
