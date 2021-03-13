@@ -25,6 +25,7 @@
                 </tr>
             </thead>
             <tbody>
+<!--            TODO Fixing search for item product with language code that came with the request-->
                 {% for item in order.items.all %}
                     <tr class="row{% cycle '1' '2' %}">
                         <td>{{ item.product.name }}</td>
