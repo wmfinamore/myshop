@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+    command: redis-server
+    ports:
+      - "6379:6379"
+
+#commands to create a docker from this docker-compose.yml
+#docker-compose up -d
+#docker-compose ps
+#docker stop docker_redis_1
+#docker start docker_redis_1
